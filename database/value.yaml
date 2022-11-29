@@ -1,0 +1,12 @@
+global:
+  postgresql:
+    password: "dkagh12."
+    username: "postgres"
+    database: "viking"
+postgresql:
+  image:
+    tag: 14.5.0-debian-11-r38
+service:
+  type: NodePort
+persistence:
+  storageClass: "nfs-client"
